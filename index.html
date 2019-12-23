@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en" manifest="cache.appcache">
+<head>
+  <meta charset="utf-8">
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <title>2048 Swiper</title>
+
+  <link href="js/main.css" rel="stylesheet" type="text/css">
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="apple-touch-icon" href="i/apple-touch-icon.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  
+  <!-- whoever added format detection on mobile browser, let me add a buff for you. -->
+	<meta name="format-detection" content="telephone=no, email=no, address=no" />
+
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, target-densitydpi=160dpi, initial-scale=1.0, maximum-scale=1, user-scalable=no, minimal-ui">
+
+  <meta property="og:title" content="2048 swiper"/>
+  <meta property="og:site_name" content="2048 swiper"/>
+  <meta property="og:description" content="Join the numbers and get to the 2e48 tile! Careful: this game is not extremely addictive!"/>
+  <meta property="og:image" content="i/og_image.png"/>
+</head>
+<body>
+  <div class="container">
+    <div class="heading">
+      <h1 class="title">2e48</h1>
+      <div class="scores-container">
+        <div class="score-container">0</div>
+        <div class="best-container">0</div>
+      </div>
+    </div>
+    
+    <!--div class="longing">
+      <div class="gold-container">0</div>
+    </div-->
+
+    <div class="above-game">
+      <p class="game-intro">Join the numbers and get to the <strong>2e48 tile!</strong></p>
+      <a class="restart-button">New Game</a>
+    </div>
+
+    <div class="game-container">
+      <div class="game-message">
+        <p></p>
+        <div class="lower">
+	        <a class="keep-playing-button">Keep going</a>
+          <a class="retry-button">Try again</a>
+          <div class="score-sharing"></div>
+        </div>
+      </div>
+
+      <div class="grid-container">
+        <div class="grid-row">
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+        </div>
+      </div>
+
+      <div class="tile-container">
+
+      </div>
+    </div>
+    
+    <div class="item-container">
+    	<div class="item item-1">
+    		<div class="item-tile">4</div>
+    		<div class="item-explanation">increases TPS(tile per swipe) by 4. cost:</div>
+    		<div class="item-cost">400</div>
+    	</div>
+    </div>
+
+    <p class="game-explanation">
+      <strong class="important">How to play:</strong> press left/right to join the numbers; click items to buy.
+    </p>
+    <hr>
+    <!--p>
+    <strong class="important">Note:</strong> This is not the official version of 2048... of course.
+    </p>
+    <hr-->
+    <p>
+    <strong class="important">Created by:</strong> me, edited from Gabriele Cirulli's 2048 game which is based on 1024 by Veewo Studio and conceptually similar to Threes by Asher Vollmer.
+    </p>
+  </div>
+
+  <script src="js/bind_polyfill.js"></script>
+  <script src="js/classlist_polyfill.js"></script>
+  <script src="js/animframe_polyfill.js"></script>
+  <script src="js/keyboard_input_manager.js"></script>
+  <script src="js/html_actuator.js"></script>
+  <script src="js/grid.js"></script>
+  <script src="js/tile.js"></script>
+  <script src="js/local_storage_manager.js"></script>
+  <script src="js/game_manager.js"></script>
+  <script src="js/application.js"></script>
+</body>
+</html>

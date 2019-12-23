@@ -1,0 +1,2 @@
+isGALoaded = true;
+_gaq = [];
