@@ -12,10 +12,10 @@ function GameManager(size, InputManager, Actuator, StorageManager) {
   
   this.tilePerSwipe   = 2;
 	this.items        = [0, 0,   0,   0,        0,      0,       0,         0,       0,         0,          0,            0,              0,                  0];
-	this.itemValues   = [0, 1,   4,   32,     256,   2048,   32768,    524288, 8388608, 268435456, 8589934592, 274877906944, 17592186044416,   1407374883553280];
-	this.itemCosts    = [1, 20,  400, 4800, 51200, 614400, 8388608, 167772160,     3e9,      6e10,     2.2e12,         5e13,         2.8e15, 633318697598976000];
-	this.itemValueIncrements   = [0, 0, 0, 0,   0,      0,       0,         0,       0,         0,          0,            0,              0,               1.06];
-	this.itemCostIncrements    = [0, 1.2];
+	this.itemValues   = [0, 9,   99,   999,     9999,   99999,   999999,    9999999, 99999999, 999999999, 9999999999, 999999999999, 99999999999999,   999999999999999999];
+	this.itemCosts    = [9, 99,  999, 9999, 999999, 9999999, 9999999, 9999999999,     9e9,      9e99,     9e99,         9e99,         9.9e99, 99999999999999999999];
+	this.itemValueIncrements   = [0, 0, 0, 0,   0,      0,       0,         0,       0,         0,          0,            0,              0,               9.99];
+	this.itemCostIncrements    = [0, 9.9];
 	this.itemValueIncrementsL  = [];
 	this.itemCostIncrementsL   = [];
 
@@ -68,10 +68,10 @@ GameManager.prototype.setup = function () {
     this.over        = false;
     this.won         = false;
     this.keepPlaying = false;
-  	this.tilePerSwipe = 2;
-		this.items        = [0, 0,   0,   0,        0,      0,       0,         0,       0,         0,          0,            0,              0,                  0];
-		this.itemValues   = [0, 1,   4,   32,     256,   2048,   32768,    524288, 8388608, 268435456, 8589934592, 274877906944, 17592186044416,   1407374883553280];
-		this.itemCosts    = [1, 20,  400, 4800, 51200, 614400, 8388608, 167772160,     3e9,      6e10,     2.2e12,         5e13,         2.8e15, 633318697598976000];
+  		this.tilePerSwipe = 9;
+	 	this.items	  = [0, 0,   0,   0,        0,      0,       0,         0,       0,         0,          0,            0,              0,                  0];
+		this.itemValues   = [0, 9,   99,   999,     9999,   99999,   999999,    9999999, 99999999, 999999999, 9999999999, 999999999999, 99999999999999,   999999999999999999];
+		this.itemCosts    = [9, 99,  999, 9999, 999999, 9999999, 9999999, 9999999999,     9e9,      9e99,     9e99,         9e99,         9.9e99, 99999999999999999999];
 		this.justBoughtItem = false;
     // Add the initial tiles
     this.addStartTiles();
