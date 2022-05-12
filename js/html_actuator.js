@@ -61,17 +61,17 @@ HTMLActuator.prototype.addItems = function (itemData) {
 
 	var explanations = ["",
 	"increases TPS(tile per swipe) by 1. cost: ",
-	"increases TPS by 4. cost: ",
-	"increases TPS by 32. cost: ",
-	"increases TPS by 256. cost: ",
-	"increases TPS by 2048. cost: ",
-	"increases TPS by 32768. cost: ",
-	"increases TPS by 524288. cost: ",
-	"increases TPS by 8388608. cost: ",
-	"+TPS by 2^28. cost: ",
-	"+TPS by 2^33. cost: ",
-	"+TPS by 2^38. cost: ",
-	"+TPS by 2^44. cost: ",
+	"increases TPS by 9. cost: ",
+	"increases TPS by 99. cost: ",
+	"increases TPS by 999. cost: ",
+	"increases TPS by 9999. cost: ",
+	"increases TPS by 99999. cost: ",
+	"increases TPS by 999999. cost: ",
+	"increases TPS by 9999999. cost: ",
+	"+TPS by 9^99. cost: ",
+	"+TPS by 9^999. cost: ",
+	"+TPS by 9^9999. cost: ",
+	"+TPS by 9^99999. cost: ",
 	"adds more TPS every purchase. cost: "];
 
 	for(var i=1; i<itemData.items.length; i++) {
@@ -235,12 +235,12 @@ HTMLActuator.prototype.scoreTweetButton = function () {
   tweet.classList.add("twitter-share-button");
   tweet.setAttribute("href", "https://twitter.com/share");
   tweet.setAttribute("data-via", "gabrielecirulli");
-  tweet.setAttribute("data-url", "http://git.io/2048");
-  tweet.setAttribute("data-counturl", "http://gabrielecirulli.github.io/2048/");
+  tweet.setAttribute("data-url", "http://discord.gg/oghub");
+  tweet.setAttribute("data-counturl", "http://discord.gg/oghub");
   tweet.textContent = "Tweet";
 
-  var text = "I scored " + this.score + " points at 2048, a game where you " +
-             "join numbers to score high! #2048game";
+  var text = "I scored " + this.score + " points playing the 9 game, a game where you " +
+             "join numbers to score high! #the9game";
   tweet.setAttribute("data-text", text);
 
   return tweet;
